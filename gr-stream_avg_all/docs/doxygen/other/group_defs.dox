@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio STREAM_AVG_ALL C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the STREAM_AVG_ALL GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+

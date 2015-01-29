@@ -1,0 +1,27 @@
+<block>
+  <name>Spectrum detect ff</name>
+  <key>stream_avg_all_spectrum_detect_ff</key>
+  <category>STREAM_AVG_ALL</category>
+  <import>import stream_avg_all</import>
+  <make>stream_avg_all.spectrum_detect_ff($fft_len, $window)</make>
+  <param>
+    <name>Fft_len</name>
+    <key>fft_len</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Window</name>
+    <key>window</key>
+    <type>real_vector</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <vlen>$fft_len</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>$fft_len</vlen>
+  </source>
+</block>

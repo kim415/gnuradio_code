@@ -1,0 +1,28 @@
+<block>
+  <name>Stream avg ff</name>
+  <key>stream_avg_all_stream_avg_ff</key>
+  <category>STREAM_AVG_ALL</category>
+  <import>import stream_avg_all</import>
+  <make>stream_avg_all.stream_avg_ff($fft_len, $nstreams)</make>
+  <param>
+    <name>Fft_len</name>
+    <key>fft_len</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Nstreams</name>
+    <key>nstreams</key>
+    <type>raw</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <vlen>$fft_len*nstreams</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>$fft_len</vlen>
+    <nports>2</nports>
+  </source>
+</block>
